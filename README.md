@@ -9,4 +9,3 @@ A set of utilities shared by the modules that build into the eco-system of Polye
 
 **This package is intended to be used by other polyestr packages and should not
 be used directly in projects.**
-
