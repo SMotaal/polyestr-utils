@@ -1,14 +1,19 @@
 {
   "name": "polyestr-utils",
-  "version": "1.0.0-Alpha.1",
-  "private": true,
+  "version": "0.0.0-development",
   "description": "A set of utilities shared by the various modules that build into the eco-system of Polyestr.",
-  "author": "Saleh Abdel Motaal <saleh@grasppe.com>",
+  "author": "Saleh A Motaal <saleh@grasppe.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grasppe/polyestr-utils.git"
+  },
   "scripts": {
     "build-verbose": "tsc --module commonjs --listFiles --pretty --extendedDiagnostics --forceConsistentCasingInFileNames --listEmittedFiles",
     "build": "tsc --module commonjs",
-    "prepare": "tsc --module commonjs"
+    "prepare": "npm run build",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "node test/index.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -17,6 +22,7 @@
   },
   "devDependencies": {
     "@types/node": "^8.0.27",
+    "semantic-release": "^8.0.3",
     "ts-node": "^3.3.0",
     "tslint": "^5.7.0"
   }
