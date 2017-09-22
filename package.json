@@ -1,0 +1,23 @@
+{
+  "name": "polyestr-utils",
+  "version": "1.0.0-Alpha.1",
+  "private": true,
+  "description": "A set of utilities shared by the various modules that build into the eco-system of Polyestr.",
+  "author": "Saleh Abdel Motaal <saleh@grasppe.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-verbose": "tsc --module commonjs --listFiles --pretty --extendedDiagnostics --forceConsistentCasingInFileNames --listEmittedFiles",
+    "build": "tsc --module commonjs",
+    "prepare": "tsc --module commonjs"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "dependencies": {
+    "typescript": "^2.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.27",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.7.0"
+  }
+}

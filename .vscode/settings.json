@@ -1,0 +1,5 @@
+{
+    "typescript.tsdk": "../../node_modules/typescript/lib",
+    "yarn.bin": "../../node_modules/yarn",
+    "npm.validate.enable": false
+}
