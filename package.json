@@ -1,6 +1,6 @@
 {
   "name": "polyestr-utils",
-  "version": "0.0.0-development",
+  "version": "1.0.0-Alpha.1",
   "description": "A set of utilities shared by the various modules that build into the eco-system of Polyestr.",
   "author": "Saleh A Motaal <saleh@grasppe.com>",
   "license": "MIT",
