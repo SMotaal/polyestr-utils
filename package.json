@@ -11,18 +11,18 @@
   "scripts": {
     "build-verbose": "tsc --module commonjs --listFiles --pretty --extendedDiagnostics --forceConsistentCasingInFileNames --listEmittedFiles",
     "build": "tsc --module commonjs",
-    "prepare": "npm run build",
-    "postinstall": "npm run build",
+    "prepack": "npm run build",
+    "-postinstall": "npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "test": "node test/index.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "dependencies": {
+    "@types/node": "^8.0.27",
     "typescript": "^2.5.2"
   },
   "devDependencies": {
-    "@types/node": "^8.0.27",
     "semantic-release": "^8.0.3",
     "ts-node": "^3.3.0",
     "tslint": "^5.7.0"
