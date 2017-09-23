@@ -1,4 +1,4 @@
-![Polyestr Uitils Logo](./src/assets/polyestr-utils.svg)
+![Polyestr Uitils Logo](https://cdn.rawgit.com/grasppe/polyestr-utils/master/src/assets/logo.svg)
 
 # Polyestr Utils
 
